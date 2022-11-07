@@ -14,7 +14,7 @@ expirate=[]
 red_50=[]
 red_20=[]
 valabil_un_an=[]
-valabil_o_luna=[]
+valabil_o_luna =[]
 
 print('\n')
 print("Data curenta:", today,'\n')
@@ -26,7 +26,7 @@ for produs in lista_de_produse:
     if(zile_totale>=365):
         valabil_un_an.append(produs[0])
     elif(zile_totale<=30):
-        valabil_un_an.append(produs[0])
+        valabil_o_luna.append(produs[0])
     termen_25=0.25*zile_totale
     produs=list(produs)
     if(pana_la_expirare<0):
